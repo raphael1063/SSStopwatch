@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SSStopwatch</string>
+    <string name="ready">READY</string>
+    <string name="start">START</string>
+    <string name="running">RUNNING</string>
+    <string name="stop">STOP</string>
+    <string name="paused">PAUSED</string>
+    <string name="resume">RESUME</string>
 </resources>
