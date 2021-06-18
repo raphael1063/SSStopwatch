@@ -8,14 +8,14 @@ plugins {
 android {
     signingConfigs {
         debug {
-            storeFile file('/Users/wonjinlim/AndroidStudioProjects/SuperSimpleStopWatch/keyStore/keyStore.jks')
+            storeFile file('keyStore/keyStore.jks')
             storePassword '920826'
             keyAlias 'key0'
             keyPassword '920826'
         }
     }
     compileSdkVersion 30
-    buildToolsVersion "29.0.3"
+    buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.SuperSimpleStopwatch.myapplication"
         minSdkVersion 23
@@ -31,6 +31,12 @@ android {
     }
     buildTypes {
         release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
