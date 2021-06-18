@@ -20,7 +20,7 @@ android {
         applicationId "com.SuperSimpleStopwatch.myapplication"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 3
+        versionCode 4
         versionName "1.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.debug
